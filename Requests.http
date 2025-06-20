@@ -1,0 +1,35 @@
+
+###
+
+GET https://localhost:5252/api/users
+
+###
+
+GET https://localhost:5252/api/users/1
+
+###
+
+POST https://localhost:5252/api/users
+Content-type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+
+###
+
+PUT https://localhost:5252/api/users/1
+Content-type: application/json
+
+{
+  "id": 1,
+  "name": "Alice Updated",
+  "email": "alice.updated@example.com"
+}
+
+###
+
+DELETE https://localhost:5252/api/users/1
+
